@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Button, Card, CardContent, Typography, Box } from "@mui/material";
-import useJokes from "../hooks/useJokes";
 import { IJoke } from "../types/Joke";
 
 const FrontPage: React.FC<{ saveJoke?: (joke: IJoke) => void }> = ({ saveJoke }) => {

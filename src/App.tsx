@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import FrontPage from "./pages/FrontPage";
-import SavedPage from "./pages/SavedPage";
+import FrontPage from "./components/FrontPage";
+import SavedPage from "./components/SavedPage";
 import useJokes from "./hooks/useJokes";
 
 const App: React.FC = () => {
