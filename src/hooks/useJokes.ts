@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IJoke } from "../types/Joke";  // Import IJoke type
+import { IJoke } from "../types/Joke";
 
 const useJokes = () => {
   const [savedJokes, setSavedJokes] = useState<IJoke[]>([]);
