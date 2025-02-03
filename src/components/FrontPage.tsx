@@ -41,7 +41,7 @@ const FrontPage: React.FC<{ saveJoke?: (joke: IJoke) => void }> = ({ saveJoke })
         )
       )}
       <Box sx={{ display: "flex", gap: 2 }}>
-        <Button variant="contained" onClick={fetchJoke} disabled={loading}>Get New Joke</Button>
+        <Button variant="contained" onClick={fetchJoke} disabled={loading}>Get Joke</Button>
         <Button variant="contained" color="secondary" onClick={() => saveJoke?.(joke!)} disabled={!joke}>Save Joke</Button>
       </Box>
     </Box>
