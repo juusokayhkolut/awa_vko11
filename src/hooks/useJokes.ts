@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IJoke } from "../types/Joke";
 
-const useJokes = () => {
+export default function useJokes() {
   const [savedJokes, setSavedJokes] = useState<IJoke[]>([]);
 
   const saveJoke = (joke: IJoke) => {
@@ -14,5 +14,3 @@ const useJokes = () => {
 
   return { savedJokes, saveJoke, deleteJoke };
 };
-
-export default useJokes;
